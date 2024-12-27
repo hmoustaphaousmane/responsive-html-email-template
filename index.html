@@ -6,6 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Responsive Email Template</title>
+  
+  <!-- Styles for smaller devices -->
+  <style>
+    /* Media query that targets screens with a maximum width of 600px i.e. when the email is viwed on devices with a screen width of 600px or less (typically smartphones and small tablets). */
+    @media screen and (max-width: 600px) {
+      .content {
+        width: 100% !important; /* Use full width of the screen and override other conflicting styles. */
+        display: block !important; /* Ensure the element behave as expected i.e. block level elements. */
+        padding: 10px !important; /* Add padding around the content within the `.content` table, reducing it from the original 40px in HTML to make better use of the reduced screen space on smaller devices. */
+      }
+      .header, .body, .footer {
+        padding: 20px !important; /* Uniformly set the padding of the header, body, footer section to 20px on all sides and override the various padding set un the HTML. */
+      }
+    }
+  </style>
 </head>
 
 <body style="font-family: 'Poppins', Arial, Helvetica, sans-serif">
