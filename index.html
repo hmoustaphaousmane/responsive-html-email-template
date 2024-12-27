@@ -9,6 +9,26 @@
 </head>
 
 <body style="font-family: 'Poppins', Arial, Helvetica, sans-serif">
-  Email content.
+  <!-- Set default font to 'Poppins', with fallback to Arial, Helvetica, sans-serif if 'Poppins' is not available-->
+  
+  <!-- Email Content -->
+  
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"> <!-- The outer table takes 100% of the email width. Remove the default styling and spacing by setting border, cellspacing and cellpadding to 0. -->
+    <tr>
+      <td align="center" style="padding: 20px">
+        <table class="content" width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; border: 1px solid #cccccc;"> <!-- First inner table with a gixed width of 600px, centered by its parent with `td align="center"`. This table includes a border and spacing styling, defining it as the main content area. -->
+          <!-- Header -->
+          <tr>
+            <!-- The header has a dark blue background (#345C72), white text color, and larger etxt size (24px). -->
+            <!-- TODO: Customize this header section with with brand name or logo instead. -->
+            <td class="header" style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
+              Responsive Email Template
+            </td>
+          </tr>
+          <!-- Header -->
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
